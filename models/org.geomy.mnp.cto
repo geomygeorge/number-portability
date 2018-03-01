@@ -1,0 +1,40 @@
+/**
+ * Write your model definitions here
+ */
+
+namespace org.geomy.mnp
+
+participant TRAI identified by name {
+  o String name
+}
+
+participant MobileNetworkOperator identified by name {
+  o String name
+}
+
+participant MNPClearingHouse identified by name {
+  o String name
+}
+
+asset NumberPortingCase identified by mobileNumber {
+
+  o String mobileNumber
+  o String customerName
+  o String donorOperator
+  o String recepientOperator
+  o Integer daysOfIncorporation optional
+  o Boolean dues optional
+
+}
+
+transaction UpdateCustomerDetails {
+
+  o String mobileNumber
+  o Integer daysOfIncorporation
+  o Boolean dues
+}
+
+transaction ChangeCarrier {
+
+  o String mobileNumber
+}

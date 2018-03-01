@@ -1,0 +1,22 @@
+{
+  "name": "number-portability",
+  "version": "0.0.1",
+  "description": "Mobile number portability solution in Blockchain",
+  "scripts": {
+    "test": "mocha --recursive"
+  },
+  "author": "Geomy George",
+  "email": "geomygeorge@gmail.com",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "composer-admin": "latest",
+    "composer-client": "latest",
+    "composer-common": "latest",
+    "composer-connector-embedded": "latest",
+    "chai": "latest",
+    "eslint": "latest",
+    "istanbul": "latest",
+    "mkdirp": "latest",
+    "mocha": "latest"
+  }
+}
